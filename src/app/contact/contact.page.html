@@ -1,0 +1,38 @@
+<ion-content [fullscreen]="true" class="background-image">
+  <!-- Header -->
+  <app-header></app-header>
+  
+  <div class="centered-container">
+    <!-- Summary -->
+    <ion-card style="min-height: 200px; width: 50%; margin: auto; background-color: rgba(68, 67, 67, 0.564);">
+      <ion-grid class="ion-margin">
+        <ion-row>
+        <ion-col [size]="screenSer.size.md_up ? 'auto' : '12'" class="center">
+          <!-- <ion-img src="assets/images/profile.jpg" alt="" class="round-image"></ion-img> -->
+        </ion-col>
+        <ion-col class="ion-padding-start ion-text-center" [size]="screenSer.size.md_up ? '' : '12'">
+          <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;">
+            <h2 style="color: var(--ion-color-light);">My Resume</h2><br>
+            <ion-img src="assets/images/my-cv.png" alt="CV Image" style="max-width: 150px; border-radius: 8px;"></ion-img>
+          <br><br>
+          </div>
+          <ion-button class="ion-text-capitalize"  (click)="viewCV()">
+            <ion-icon slot="start" name="eye-outline"></ion-icon>View CV
+          </ion-button>
+          <ion-button class="ion-text-capitalize" (click)="downloadCV()">
+            <ion-icon slot="start" name="cloud-download-outline"></ion-icon>Click to Download
+          </ion-button><br><br><br><br>
+          <h2 style="color: var(--ion-color-light);">My Contact</h2>
+          <p> Phone: 096 244 96 30 / 092 54 02 96</p>
+          <p> Email: chanminearoeun@gmail.com</p>
+          <p> Address: 101, St. 05 Krang Thnong, Sen Sok</p>
+        </ion-col>
+        
+      </ion-row>
+      </ion-grid>
+    </ion-card>
+  </div>
+  <!-- Footer -->
+  <app-footer></app-footer>
+</ion-content>
+ 

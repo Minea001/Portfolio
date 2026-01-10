@@ -1,0 +1,14 @@
+
+// .selected-menu-item {
+//     --background: var(--ion-color-secondary); /* Example: highlight with a lighter primary color */
+//     --color: rgb(255, 255, 255); /* Example: change text color */
+//     font-weight: bold; /* Example: make text bold */
+// }
+
+/* You might also want to style the ion-label inside */
+ion-item.active-item {
+  --background: #e0f2ff;      // background color
+  --color: #1e40af;           // text color (optional)
+  font-weight: 600;
+}
+

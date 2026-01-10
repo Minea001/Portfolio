@@ -1,0 +1,32 @@
+<ion-header class="ion-text-center">
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding" style="--overflow: hidden; --background: white;">
+    <ion-card style="width: 70%; margin: 0 auto; height: 100%;  --background: white;">
+      <ion-grid class="ion-margin" style="margin-top: 30px;">
+        <ion-row>
+          <ion-col style="display: flex; align-items: center; justify-content: center;">
+            <ion-icon name="person-circle-outline" style="font-size: 80px;"></ion-icon>
+          </ion-col>
+        </ion-row>
+        <ion-row class="ion-margin-top" style="--background: transparent; color: black;">
+          <ion-input class="input" label="Username" fill="outline" labelPlacement="floating" type="text" [(ngModel)]="email"></ion-input>
+        </ion-row>
+        <ion-row class="ion-margin-top" style="--background: transparent; color: black;">
+          <ion-input class="input" label="Password" fill="outline" labelPlacement="floating" type="password" [(ngModel)]="password"></ion-input>
+        </ion-row>
+        <ion-row class="ion-margin-top">
+          <ion-col style="display: flex; align-items: center; justify-content: center;">
+            <ion-button color="warning" (click)="login()" style="font-weight: bold;">Login</ion-button>
+          </ion-col>
+        </ion-row>
+        <ion-row class="ion-margin-top">
+          <ion-col class="ion-text-center ion-align-self-center">
+            <ion-label>Don't have an account? <a href="#" style="color: blue;">Sign Up</a></ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+</ion-content>

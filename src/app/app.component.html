@@ -1,0 +1,27 @@
+<ion-menu contentId="main-content">
+  <ion-header >
+    <ion-toolbar color="light" style="--background: transparent;">
+      <ion-title class="ion-text-center" color="primary">MENU</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-list style="background: transparent;">
+      @for (b of buttons; track b.id) {
+        <ion-item style="--background: transparent; color: white" button lines="full" (click)="menuClick(b)"
+          [routerLink]="b.route" routerLinkActive="active-item" routerDirection="root"
+          [style]="{
+              '--background': b.selected ? 'white' : 'transparent',
+              'color': b.selected ? 'black' : 'white',
+              'border-radius': b.selected ? '8px' : ''
+            }"
+          >
+          <ion-label>{{ b.label }}</ion-label>
+        </ion-item>
+      }
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<ion-app>
+  <ion-router-outlet  id="main-content"></ion-router-outlet>
+</ion-app>
+

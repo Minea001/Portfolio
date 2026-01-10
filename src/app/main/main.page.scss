@@ -1,0 +1,90 @@
+.container {
+  margin: 15vh auto; 
+  display: flex;
+  text-align: center; 
+  align-items: center;
+  justify-content: center; 
+  flex-direction: column;
+}
+
+ion-list {
+    background: transparent;
+}
+
+ion-item {
+    --background: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+ion-icon {
+    font-size: 3em;
+}
+
+.icon_selected:hover {
+    transition: transform 1s ease;
+    transform: scale(1.2);
+    // font-size: 3em;
+    cursor: pointer;
+}
+.letter {
+  z-index: 2;
+}
+.letter:hover {
+    transition: transform 1s ease;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.draggable {
+    position: absolute;
+    cursor: grab;
+    touch-action: none; // VERY IMPORTANT for mobile
+    user-select: none;
+    width:400px;
+    height:400px;
+    position:absolute; 
+    top: 10%; 
+    right:5%; 
+    z-index: 1;
+    // will-change: transform;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.25s ease;
+
+}
+
+/* Vertical line */
+.timeline {
+  position: relative;
+  // top: 45%;
+  left: 10px;
+  height: 3px;
+  width: 300px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.8),
+    rgba(98, 98, 98, 0.1)
+  );
+}
+
+/* Glowing dot */
+.node {
+  position: absolute;
+  left: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background: #ffffffea;
+  border-radius: 50%;
+
+  box-shadow:
+    0 0 6px #f6ff43a5,
+    0 0 12px #f6ff43,
+    0 0 20px #f6ff43b5;
+}
+

@@ -1,0 +1,30 @@
+<!-- Header -->
+<ion-row>
+  @if (screenSer.size.md_down) {
+    <ion-col [size]="screenSer.size.md_up ? '4' : '6'" class="ion-align-self-center">
+      <ion-buttons style="color: white;">
+        <ion-menu-button autoHide="false"></ion-menu-button>
+      </ion-buttons>
+    </ion-col>
+  }
+  <ion-col class="ion-align-self-center" [size]="screenSer.size.md_up ? '4' : '6'">
+    <!-- <ion-item button lines="none" class="ion-text-right">
+      <ion-icon slot="end" color="light" name="navigate"></ion-icon>
+      <ion-icon slot="end" color="light" name="logo-facebook"></ion-icon>
+      <ion-icon slot="end" color="light" name="logo-linkedin"></ion-icon>
+    </ion-item> -->
+  </ion-col>
+  @if (screenSer.size.md_up) {
+    <ion-col [size]="screenSer.size.md_up ? '4' : '6'" class="ion-align-self-center"></ion-col>
+    <ion-col [size]="screenSer.size.md_up ? '4' : '6'">
+      <ion-list class="header" style="background: transparent;">
+        @for (b of buttons; track b.id) {
+          <ion-item button lines="none" (click)="menuClick(b)"
+          [routerLink]="b.route" routerLinkActive="selected-menu-item" routerDirection="root">
+            <ion-label>{{ b.label }}</ion-label>
+          </ion-item>
+        }
+      </ion-list>
+    </ion-col>
+  }
+</ion-row>

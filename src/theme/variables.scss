@@ -1,0 +1,51 @@
+// For information on how to create your own theme, please see:
+// http://ionicframework.com/docs/theming/
+/* Set variables for all modes */
+:root {
+  /* Set the background of the entire app */
+  --ion-background-color: white;
+
+  /* Set the font family of the entire app */
+  --ion-font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Roboto', sans-serif;
+}
+
+/* Set text color of the entire app for iOS only */
+:root.ios {
+  --ion-text-color: #000;
+}
+
+/* Set text color of the entire app for Material Design only */
+:root.md {
+  --ion-text-color: #222;
+}
+
+:root {
+  // Primary Color
+  --ion-color-primary: rgb(27, 27, 30); /* Your custom primary color */
+  --ion-color-primary-rgb: 255, 0, 0;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+
+  // secondary Color
+  --ion-color-secondary: rgba(0, 0, 0, 0.57);;
+  --ion-color-secondary-light: #rgba;
+  --ion-color-light: white; /* Your custom light color */
+
+  // danger Color
+  --ion-color-success: rgb(0, 0, 255);
+
+  // Blue color
+  --ion-color-danger: var(--ion-color-warning-shade);
+  --ion-color-danger-light: var(--ion-color-warning);
+  
+  // Tertiary
+  --ion-color-tertiary: var(--ion-color-tertiary);
+
+}
+
+@font-face {
+  font-family: 'myfont';
+  src: url('../assets/fonts/Lato-Black.ttf');
+  font-weight: normal;
+  font-style: normal;
+}

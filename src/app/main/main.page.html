@@ -1,0 +1,27 @@
+<ion-content [fullscreen]="true" class="background-image">
+  
+  <!-- Header -->
+  <app-header></app-header>
+
+  <div #box class="draggable">
+    <!-- pc_av.png -->
+    <ion-img src="/assets/images/pc_av.png"
+      (pointerdown)="startDrag($event)"
+      (pointermove)="onDrag($event)"
+      (pointerup)="endDrag($event)"
+    ></ion-img>
+  </div>
+
+  <div class="container">
+    <h1 class="letter" style="font-size: 3em; font-weight: bold; color: white;">ROEUN CHANMINEA</h1>
+    <p class="letter" style="font-size: 1.5em; color: white;">Web Application Developer</p>  
+    <div class="timeline">
+      <div class="node"></div>
+    </div>
+    <ion-item lines="none" class="ion-text-right">
+      <ion-icon class="icon_selected" (click)="telegramClick()" slot="end" color="light" name="navigate"></ion-icon>
+      <ion-icon class="icon_selected" (click)="facebookClick()" slot="end" color="light" name="logo-facebook"></ion-icon>
+      <ion-icon class="icon_selected" (click)="linkedinClick()" slot="end" color="light" name="logo-linkedin"></ion-icon>
+    </ion-item>
+  </div>
+</ion-content>

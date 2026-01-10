@@ -1,0 +1,167 @@
+<ion-content [fullscreen]="true" class="background-image">
+  <!-- Header -->
+  <app-header></app-header>
+  
+  <div class="centered-container">
+    <!-- <ion-card style="min-height: 300px;" class="ion-no-margin ion-margin-bottom"> -->
+      <!-- <video class="cover" src="assets/images/video2.mp4"  autoplay muted loop playsinline></video> -->
+      <!-- <ion-img class="cover" src="assets/images/bg_pc.jpg" alt=""></ion-img>
+      <ion-grid>
+        <ion-row>
+          <ion-col class="ion-text-left ion-padding">
+            <h1 style="color: white">I'm Minea,</h1>
+            <h3> Web Application Developer</h3>
+            <p class="summary">
+              {{ EText.SUMMARY }}
+            </p>
+          </ion-col>
+          <ion-col size="3" class="center">
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card> -->
+
+    <!-- Summary -->
+    <ion-card style="min-height: 200px; margin: auto; background-color: rgba(68, 67, 67, 0.199);">
+      <ion-grid class="ion-margin">
+        <ion-row>
+        <ion-col [size]="screenSer.size.md_up ? 'auto' : '12'" class="center">
+          <ion-img src="assets/images/profile.jpg" alt="" class="round-image"></ion-img>
+        </ion-col>
+        <ion-col class="ion-padding-start" [size]="screenSer.size.md_up ? '' : '12'" [class]="screenSer.size.md_up ? 'ion-text-left' : 'ion-text-center'">
+          <h1 style="color: white">CHANMINEA ROEUN</h1>
+          <h3> Web Application Developer</h3>
+          <p class="summary">
+            {{ EText.SUMMARY }}
+          </p>
+        </ion-col>
+      </ion-row>
+      </ion-grid>
+    </ion-card>
+    
+    <!-- Additional Course -->
+    <ion-grid >
+      <!-- Row 1 -->
+      <ion-row>
+        <ion-col [size]="screenSer.size.md_up? '6': '12'">
+          <ion-card class="card">
+            <img src="assets/images/flutter.jpg" />
+            <ion-card-header>
+              <ion-card-title>Full Stack App Development </ion-card-title>
+              <ion-card-subtitle style="font-size: 16px;"> SalaIT</ion-card-subtitle>
+              <ion-card-subtitle style="font-size: 13px;">(June - November 2025)</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <!-- <div style="border-bottom: 1px solid cyan;"></div> -->
+              <!-- <ion-progress-bar value="1" color="tertiary"></ion-progress-bar>
+              <p style="margin-top: 10px;">
+                Full Stack App Development  
+              </p> -->
+              <b style="margin-top: 10px;">
+                (Flutter + Laravel)
+              </b>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <ion-col [size]="screenSer.size.md_up? '6': '12'">
+          <ion-card class="card">
+            <img src="assets/images/php_mysql.jpg" />
+            <ion-card-header>
+              <ion-card-title>Backend Web Development</ion-card-title>
+              <ion-card-subtitle style="font-size: 16px;">ETECT Training Center</ion-card-subtitle>
+              <ion-card-subtitle style="font-size: 13px;">(August - October 2022)</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <!-- <div style="border-bottom: 1px solid cyan;"></div> -->
+              <!-- <ion-progress-bar value="1" color="tertiary"></ion-progress-bar>
+              <p style="margin-top: 10px;">
+                Web Backend Development
+              </p> -->
+              <b style="margin-top: 10px;">
+                (PHP + Mysql)
+              </b>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <ion-col [size]="screenSer.size.md_up? '6': '12'">
+          <ion-card class="card">
+            <img src="assets/images/frontent_course.jpg" />
+            <ion-card-header>
+              <ion-card-title> Frontend Web Development</ion-card-title>
+              <ion-card-subtitle style="font-size: 16px;">ETECT Training Center</ion-card-subtitle>
+              <ion-card-subtitle style="font-size: 13px;">(August - October 2022)</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <!-- <div style="border-bottom: 1px solid cyan;"></div> -->
+              <!-- <ion-progress-bar value="1" color="tertiary"></ion-progress-bar> -->
+              <!-- <p style="margin-top: 10px;">
+                Web Frontend Development 
+              </p> -->
+              <b style="margin-top: 10px;">
+                (HTML, CSS, JQuery, Javascript)  
+              </b>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        
+        <ion-col [size]="screenSer.size.md_up? '6': '12'">
+          <ion-card class="card">
+            <img src="assets/images/c.jpg" />
+            <ion-card-header>
+              <ion-card-title>Basic Programming</ion-card-title>
+              <ion-card-subtitle style="font-size: 16px;">Baktouk Training Center</ion-card-subtitle>
+              <ion-card-subtitle style="font-size: 13px;">(July - September 2020)</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <!-- <ion-progress-bar value="1" color="tertiary"></ion-progress-bar> -->
+              <!-- <div style="border-bottom: 1px solid cyan;"></div>
+              <p style="margin-top: 10px;">
+                Basic Programming
+              </p> -->
+              <b style="margin-top: 10px;">
+                 (C Programming)
+              </b>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+
+    <!-- Skill Ball -->
+    <div class="skill-ball-container">
+      <div class="skill-ball">
+        <img alt="Silhouette of mountains" src="assets/images/html.jpg" />
+      </div>
+      <div class="skill-ball">
+        <img alt="Silhouette of mountains" src="assets/images/css.jpg" />
+      </div>
+      <div class="skill-ball">
+        <img alt="Silhouette of mountains" src="assets/images/js.jpg" />
+      </div>
+      <div class="skill-ball">
+        <img  alt="Silhouette of mountains" src="assets/images/php.jpg" />
+      </div>
+    </div>
+    <br>
+    <div class="skill-ball-container">
+      <div class="skill-ball">
+        <img alt="Silhouette of mountains" src="assets/images/laravel.jpg" />
+      </div>
+      <div class="skill-ball">
+        <img alt="Silhouette of mountains" src="assets/images/angular.jpg" />
+      </div>
+      <div class="skill-ball">
+        <img alt="Silhouette of mountains" src="assets/images/mysql.jpg" />
+      </div>
+      <div class="skill-ball">
+        <img alt="Silhouette of mountains" src="assets/images/git-hub.jpg" />
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <!-- <app-footer></app-footer> -->
+</ion-content>
+ 

@@ -1,0 +1,26 @@
+.centered-container {
+  max-width: 600px; /* Set a maximum width */
+  margin: 0 auto; /* This centers the container horizontally */
+  padding: 16px; /* Optional: add some internal padding */
+  border-radius: 20px;
+}
+
+/* Optional: use a media query to only apply this on larger screens */
+@media (min-width: 768px) {
+  .centered-container {
+    max-width: 800px;
+  }
+}
+
+.background-image {
+  // --background: black;
+  background-image: url('/assets/images/gb3.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+p {
+    color: var(--ion-color-light);
+}
