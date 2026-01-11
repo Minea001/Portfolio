@@ -46,4 +46,36 @@
     Phone: 096 244 96 30 / 092 54 02 96
     Email: chanminearoeun@gmail.com
     Address: 101, St. 05 Krang Thnong, Sen Sok
+// Add to index.html before </head>
+<script>
+  (function () {
+    const redirect = sessionStorage.redirect;
+    delete sessionStorage.redirect;
+    if (redirect && redirect !== location.href) {
+      history.replaceState(null, null, redirect);
+    }
+  })();
+</script>
+
+// create 404.html
+<script>
+  sessionStorage.redirect = location.href;
+</script>
+<meta http-equiv="refresh" content="0;URL='/'">
+
+======> how to deploy to Git
+
+1. ionic build --prod -- --base-href=/REPO_NAME/
+2.Create /docs folder then copy all data in www => doc
+3. git add .
+git commit -m "Deploy"
+git push
+4. Enable GitHub Pages
+GitHub → Settings → Pages
+Source: Deploy from a branch
+Branch: main
+Folder: /docs
+Save
+5. https://USERNAME.github.io/REPO_NAME/ is your site to access
+
 

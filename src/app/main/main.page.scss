@@ -88,3 +88,12 @@ ion-icon {
     0 0 20px #f6ff43b5;
 }
 
+.background-image {
+    --background: none;
+  background-image: url('/assets/images/5.gif');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  // opacity: 0.9;
+}
