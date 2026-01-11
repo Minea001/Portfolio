@@ -65,7 +65,7 @@
 
 ======> how to deploy to Git
 
-1. ionic build --prod -- --base-href=/REPO_NAME/
+1. ionic build --prod -- --base-href=/Portfolio/
 2.Create /docs folder then copy all data in www => doc
 3. git add .
 git commit -m "Deploy"
