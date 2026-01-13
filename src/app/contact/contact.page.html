@@ -4,7 +4,7 @@
   
   <div class="centered-container">
     <!-- Summary -->
-    <ion-card style="min-height: 200px; width: 50%; margin: auto; background-color: rgba(68, 67, 67, 0.564);">
+    <ion-card [style.width]="screenSer.size.md_up ? '50%': ''" style="min-height: 200px; margin: auto; background-color: rgba(68, 67, 67, 0.564);">
       <ion-grid class="ion-margin">
         <ion-row>
         <ion-col [size]="screenSer.size.md_up ? 'auto' : '12'" class="center">
